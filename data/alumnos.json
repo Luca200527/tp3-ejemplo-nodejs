@@ -1,0 +1,152 @@
+[
+  {
+    "legajo": 10001,
+    "nombre": "Mora García",
+    "email": "m.garcia@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10002,
+    "nombre": "Liam Rodríguez",
+    "email": "l.rodriguez@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10003,
+    "nombre": "Julieta Martínez",
+    "email": "j.martinez@facultad.edu.ar",
+    "isActive": false
+  },
+  {
+    "legajo": 10004,
+    "nombre": "Mateo Pérez",
+    "email": "m.perez@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10005,
+    "nombre": "Sofía López",
+    "email": "s.lopez@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10006,
+    "nombre": "Lucas González",
+    "email": "l.gonzalez@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10007,
+    "nombre": "Valentina Sánchez",
+    "email": "v.sanchez@facultad.edu.ar",
+    "isActive": false
+  },
+  {
+    "legajo": 10008,
+    "nombre": "Benjamín Romero",
+    "email": "b.romero@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10009,
+    "nombre": "Martina Díaz",
+    "email": "m.diaz@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10010,
+    "nombre": "Thiago Silva",
+    "email": "t.silva@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10011,
+    "nombre": "Victoria Castro",
+    "email": "v.castro@facultad.edu.ar",
+    "isActive": false
+  },
+  {
+    "legajo": 10012,
+    "nombre": "Santino Sosa",
+    "email": "s.sosa@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10013,
+    "nombre": "Delfina Ruiz",
+    "email": "d.ruiz@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10014,
+    "nombre": "Camilo Torres",
+    "email": "c.torres@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10015,
+    "nombre": "Elena Benítez",
+    "email": "e.benitez@facultad.edu.ar",
+    "isActive": false
+  },
+  {
+    "legajo": 10016,
+    "nombre": "Felipe Acosta",
+    "email": "f.acosta@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10017,
+    "nombre": "Alma Flores",
+    "email": "a.flores@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10018,
+    "nombre": "Facundo Morales",
+    "email": "f.morales@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10019,
+    "nombre": "Isabella Ortiz",
+    "email": "i.ortiz@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10020,
+    "nombre": "Joaquín Ramos",
+    "email": "j.ramos@facultad.edu.ar",
+    "isActive": false
+  },
+  {
+    "legajo": 10021,
+    "nombre": "Bautista Herrera",
+    "email": "b.herrera@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10022,
+    "nombre": "Lola Medina",
+    "email": "l.medina@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10023,
+    "nombre": "Juan Cruz Vega",
+    "email": "jc.vega@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10024,
+    "nombre": "Catalina Blanco",
+    "email": "c.blanco@facultad.edu.ar",
+    "isActive": true
+  },
+  {
+    "legajo": 10025,
+    "nombre": "Tomás Méndez",
+    "email": "t.mendez@facultad.edu.ar",
+    "isActive": true
+  }
+]

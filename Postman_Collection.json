@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "Aurora Students Hub API",
+    "description": "Documentación oficial para el TP N°4. Lee los ejemplos antes de empezar.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Alumnos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3001/api/alumnos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "alumnos"]
+        },
+        "description": "Retorna la lista completa de alumnos desde el archivo JSON."
+      }
+    },
+    {
+      "name": "Crear Alumno (Pendiente)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"legajo\": 0,\n    \"nombre\": \"\",\n    \"apellido\": \"\",\n    \"email\": \"@facultad.edu.ar\",\n    \"promedio\": 0,\n    \"regular\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3001/api/alumnos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "alumnos"]
+        },
+        "description": "Endpoint para dar de alta un alumno. Debes completar el body y el DTO en el backend."
+      }
+    }
+  ]
+}
