@@ -3,6 +3,7 @@
 ## Grupo 17
 
 ### Integrantes
+
 - Jano Rodriguez
 - Luca Aversano
 - Dino Detzel
@@ -33,19 +34,20 @@ Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el fo
 
 ## División de archivos entre integrantes
 
-| Integrante | Archivos |
-|---|---|
-| Joaquin Robles | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
-| Luca Aversano | `index.html`, `main.js` |
-| Jano Rodriguez | Por completar |
-| Dino Detzel | Por completar |
-| Owen Braggi | Por completar |
-| Garcia Amado Juan Manuel | Por completar |
+| Integrante               | Archivos                                                                                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Joaquin Robles           | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
+| Luca Aversano            | `index.html`, `main.js`                                                                                                                                                   |
+| Jano Rodriguez           | Por completar                                                                                                                                                             |
+| Dino Detzel              | Por completar                                                                                                                                                             |
+| Owen Braggi              | Por completar                                                                                                                                                             |
+| Garcia Amado Juan Manuel | Por completar                                                                                                                                                             |
 
 ---
 
 ## Distribución de archivos y carpetas
 
+```
 tp3-ejemplo-nodejs/
 ├── controllers/
 │   ├── alumno.controller.js
@@ -74,6 +76,7 @@ tp3-ejemplo-nodejs/
 ├── app.js
 ├── Dockerfile
 └── package.json
+```
 
 ---
 
@@ -129,6 +132,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ## Ejemplos de estructura JSON
 
 ### alumnos.json
+
 ```json
 {
   "legajo": 10001,
@@ -142,6 +146,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ```
 
 ### sys-materias.json
+
 ```json
 {
   "idMateria": "MAT101",
@@ -151,6 +156,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ```
 
 ### sys-notas.json
+
 ```json
 {
   "id": 1,
@@ -162,6 +168,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ```
 
 ### sys-profesores.json
+
 ```json
 []
 ```
