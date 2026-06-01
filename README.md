@@ -48,34 +48,34 @@ Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el fo
 ## Distribución de archivos y carpetas
 
 ```
-  tp3-ejemplo-nodejs/
-  ├── controllers/
-  │   ├── alumno.controller.js
-  │   ├── materia.controller.js
-  │   ├── nota.controller.js
-  │   └── profesor.controller.js
-  ├── core/
-  │   └── server.js
-  ├── data/
-  │   ├── extras/
-  │   │   ├── sys-materias.json
-  │   │   ├── sys-notas.json
-  │   │   └── sys-profesores.json
-  │   └── alumnos.json
-  ├── models/
-  │   ├── alumno.model.ts
-  │   └── persona.model.ts
-  ├── routes/
-  │   ├── extras/
-  │   │   ├── materia.routes.js
-  │   │   ├── nota.routes.js
-  │   │   └── profesor.routes.js
-  │   └── alumno.routes.js
-  ├── .env
-  ├── .gitignore
-  ├── app.js
-  ├── Dockerfile
-  └── package.json
+tp3-ejemplo-nodejs/
+├── controllers/
+│   ├── alumno.controller.js
+│   ├── materia.controller.js
+│   ├── nota.controller.js
+│   └── profesor.controller.js
+├── core/
+│   └── server.js
+├── data/
+│   ├── extras/
+│   │   ├── sys-materias.json
+│   │   ├── sys-notas.json
+│   │   └── sys-profesores.json
+│   └── alumnos.json
+├── models/
+│   ├── alumno.model.ts
+│   └── persona.model.ts
+├── routes/
+│   ├── extras/
+│   │   ├── materia.routes.js
+│   │   ├── nota.routes.js
+│   │   └── profesor.routes.js
+│   └── alumno.routes.js
+├── .env
+├── .gitignore
+├── app.js
+├── Dockerfile
+└── package.json
 ```
 
 ---
