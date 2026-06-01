@@ -81,15 +81,6 @@
     "isActive": true
   },
   {
-    "legajo": 10010,
-    "nombre": "Thiago",
-    "apellido": "Silva",
-    "email": "t.silva@facultad.edu.ar",
-    "fechaAlta": "2026-04-03",
-    "modificacion": "2026-04-03",
-    "isActive": true
-  },
-  {
     "legajo": 10011,
     "nombre": "Victoria",
     "apellido": "Castro",
@@ -222,6 +213,24 @@
     "email": "t.mendez@facultad.edu.ar",
     "fechaAlta": "2026-05-14",
     "modificacion": "2026-05-14",
+    "isActive": true
+  },
+  {
+    "legajo": 20010,
+    "nombre": "Pepito",
+    "apellido": "Gomez",
+    "email": "m.garcia@facultad.edu.ar",
+    "fechaAlta": "2026-03-02",
+    "modificacion": "2026-03-02",
+    "isActive": true
+  },
+  {
+    "legajo": 12345,
+    "nombre": "TestCollection",
+    "apellido": "ApellidoModificado",
+    "email": "ejemplo@facultad.edu.ar",
+    "fechaAlta": "2026-06-01",
+    "modificacion": "2026-06-01",
     "isActive": true
   }
 ]
