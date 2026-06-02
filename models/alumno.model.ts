@@ -1,16 +1,13 @@
-import { PersonaModel } from './persona.model'
+import { PersonaModel } from './persona.model.ts'
 
 export class AlumnoModel extends PersonaModel {
-  constructor(
-    private legajo: number,
-    nombre: string,
-    apellido: string,
-    email: string,
-    private fechaAlta: string,
-    private modificacion: string,
-    private isActive: boolean
-  ) {
+  private legajo: number
+  private fechaAlta: string = new Date().toISOString().split('T')[0]
+  private modificacion: string = new Date().toISOString().split('T')[0]
+  private isActive: boolean = true
+  constructor(legajo: number, nombre: string, apellido: string, email: string) {
     super(nombre, apellido, email)
+    this.legajo = legajo
   }
 
   // legajo
@@ -24,9 +21,6 @@ export class AlumnoModel extends PersonaModel {
   // fechaAlta
   public getFechaAlta(): string {
     return this.fechaAlta
-  }
-  public setFechaAlta(fechaAlta: string): void {
-    this.fechaAlta = fechaAlta
   }
 
   // modificacion

@@ -3,6 +3,7 @@
 ## Grupo 17
 
 ### Integrantes
+
 - Jano Rodriguez
 - Luca Aversano
 - Dino Detzel
@@ -27,25 +28,26 @@ API REST desarrollada con Node.js y Express que permite gestionar alumnos, mater
 
 ## Metodología de trabajo con Git y GitHub
 
-Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el formato `alumno_nombre`, realizó sus cambios y abrió un Pull Request hacia `main`. Cada alumno tiene mínimo un commit en su rama.
+Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el formato `alumno_nombre` o `feature/nombre`, realizó sus cambios y abrió un Pull Request hacia `dev`. Cada alumno tiene mínimo un commit en su rama.
 
 ---
 
 ## División de archivos entre integrantes
 
-| Integrante | Archivos |
-|---|---|
-| Joaquin Robles | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
-| Luca Aversano | `index.html`, `main.js` |
-| Jano Rodriguez | Por completar |
-| Dino Detzel | Por completar |
-| Owen Braggi | Por completar |
-| Garcia Amado Juan Manuel | Por completar |
+| Integrante               | Archivos                                                                                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Joaquin Robles           | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
+| Luca Aversano            | `index.html`, `script.js`                                                                                                                                                 |
+| Jano Rodriguez           | `base.css`, `components.css`, `forms.css`                                                                                                                                 |
+| Dino Detzel              | `README.md`, `components.css`, `forms.css`, `index.html`, `script.js`                                                                                                     |
+| Owen Bamberger           | `README.md`, `tp3-postman-collection.json`                                                                                                                                |
+| Garcia Amado Juan Manuel | `package.json`, `package-lock.json`, `alumno.controller.js`, `server.js`, `alumnos.json`, `alumno.routes.js`, `tp3-postman-collection.json`                               |
 
 ---
 
 ## Distribución de archivos y carpetas
 
+```
 tp3-ejemplo-nodejs/
 ├── controllers/
 │   ├── alumno.controller.js
@@ -74,6 +76,7 @@ tp3-ejemplo-nodejs/
 ├── app.js
 ├── Dockerfile
 └── package.json
+```
 
 ---
 
@@ -129,6 +132,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ## Ejemplos de estructura JSON
 
 ### alumnos.json
+
 ```json
 {
   "legajo": 10001,
@@ -142,6 +146,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ```
 
 ### sys-materias.json
+
 ```json
 {
   "idMateria": "MAT101",
@@ -151,6 +156,7 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
 ```
 
 ### sys-notas.json
+
 ```json
 {
   "id": 1,
@@ -159,11 +165,6 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
   "nota": 9,
   "fecha": "03-04-24"
 }
-```
-
-### sys-profesores.json
-```json
-[]
 ```
 
 ---
