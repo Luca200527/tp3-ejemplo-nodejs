@@ -7,7 +7,7 @@ const getNotaAll = async (req, res) => {
 
     return res.status(200).json(notas)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({ error: 'No se pudieron obtener las notas' })
   }
 }
@@ -26,7 +26,7 @@ const getNotaByLegajo = async (req, res) => {
 
     return res.status(200).json(notasAlumno)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({ error: 'No se pudieron obtener las notas' })
   }
 }
