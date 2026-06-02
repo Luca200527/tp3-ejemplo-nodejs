@@ -38,10 +38,10 @@ Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el fo
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Joaquin Robles           | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
 | Luca Aversano            | `index.html`, `main.js`                                                                                                                                                   |
-| Jano Rodriguez           | Por completar                                                                                                                                                             |
-| Dino Detzel              | Por completar                                                                                                                                                             |
-| Owen Braggi              | Por completar                                                                                                                                                             |
-| Garcia Amado Juan Manuel | Por completar                                                                                                                                                             |
+| Jano Rodriguez           | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
+| Dino Detzel              | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
+| Owen Braggi              | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
+| Garcia Amado Juan Manuel | `alumno.controller.js`,`alumno.model.ts`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js`                                                   |
 
 ---
 
