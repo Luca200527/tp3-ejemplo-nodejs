@@ -1,5 +1,5 @@
 const fs = require('fs').promises
-
+const { AlumnoModel } = require('../models/alumno.model')
 const getAlumnoAll = async (req, res) => {
   try {
     const data = await fs.readFile('./data/alumnos.json', 'utf8')
@@ -34,45 +34,30 @@ const getAlumnoById = async (req, res) => {
     return res.status(200).json(legajoId)
   } catch (error) {
     console.log(error)
-    return res.status(500).JSON({
-      error: 'No se pudo obtener el datalle del alumno con legajo n° {legajo}'
+    return res.status(500).json({
+      error: 'No se pudo obtener el detalle del alumno con legajo n° {legajo}'
     })
   }
 }
+
 const createAlumno = async (req, res) => {
   try {
-    const {
-      legajo,
-      nombre,
-      apellido,
-      email,
-      fechaAlta,
-      modificacion,
-      isActive
-    } = req.body
+    const { nombre, apellido, email } = req.body
 
-    if (!legajo || !nombre || !apellido || !email || !fechaAlta) {
+    if (!nombre || !apellido || !email) {
       return res.status(400).json({ msg: 'Faltan datos obligatorios' })
     }
     const data = await fs.readFile('./data/alumnos.json', 'utf8')
     const alumnos = JSON.parse(data)
-    if (alumnos.find((a) => a.legajo === Number(legajo))) {
-      return res.status(400).json({ msg: `El legajo ${legajo} ya existe` })
-    }
-    alumnos.push({
-      legajo,
-      nombre,
-      apellido,
-      email,
-      fechaAlta,
-      modificacion,
-      isActive
-    })
+
+    const newLegajo = Math.max(...alumnos.map((alumno) => alumno.legajo)) + 1
+    const newAlumno = new AlumnoModel(newLegajo, nombre, apellido, email)
+    alumnos.push(newAlumno.getAllAttributes())
     await fs.writeFile('./data/alumnos.json', JSON.stringify(alumnos))
     return res.status(201).json({ msg: 'Alumno creado' })
   } catch (error) {
     console.log(error)
-    return res.status(500).JSON({
+    return res.status(500).json({
       error: 'No se pudo crear el alumno'
     })
   }
@@ -112,8 +97,8 @@ const updateAlumno = async (req, res) => {
     if (!legajo) {
       return res.status(400).json({ msg: 'Faltan el legajo' })
     }
-    const { nombre, apellido, email, fechaAlta, modificacion, isActive } =
-      req.body
+
+    const { nombre, apellido, email, isActive } = req.body
     const data = await fs.readFile('./data/alumnos.json', 'utf8')
     const alumnos = JSON.parse(data)
     const alumnoToUpdate = alumnos.find((a) => a.legajo === Number(legajo))
@@ -121,14 +106,17 @@ const updateAlumno = async (req, res) => {
     if (!alumnoToUpdate) {
       return res.status(400).json({ msg: `El legajo ${legajo} no existe` })
     }
-    if (nombre) alumnoToUpdate.nombre = nombre
-    if (apellido) alumnoToUpdate.apellido = apellido
-    if (email) alumnoToUpdate.email = email
-    if (fechaAlta) alumnoToUpdate.fechaAlta = fechaAlta
-    if (modificacion) alumnoToUpdate.modificacion = modificacion
-    if (isActive) alumnoToUpdate.isActive = isActive
+    const alumnoAuxiliar = { ...alumnoToUpdate }
+    if (nombre) alumnoAuxiliar.nombre = nombre
+    if (apellido) alumnoAuxiliar.apellido = apellido
+    if (email) alumnoAuxiliar.email = email
+    if (isActive !== null) alumnoAuxiliar.isActive = isActive
+
     const updatedAlumnos = alumnos.filter((a) => a.legajo !== Number(legajo))
-    updatedAlumnos.push(alumnoToUpdate)
+    alumnoAuxiliar.modificacion = new Date().toISOString().split('T')[0]
+
+    updatedAlumnos.push(alumnoAuxiliar)
+
     await fs.writeFile(
       './data/alumnos.json',
       JSON.stringify(updatedAlumnos, null, 2)
@@ -136,7 +124,7 @@ const updateAlumno = async (req, res) => {
 
     return res
       .status(200)
-      .json({ msg: 'Alumno actualizado', alumno: alumnoToUpdate })
+      .json({ msg: 'Alumno actualizado', alumno: alumnoAuxiliar })
   } catch (error) {
     console.log(error)
     return res.status(500).json({
