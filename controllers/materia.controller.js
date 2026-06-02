@@ -7,7 +7,7 @@ const getMateriaAll = async (req, res) => {
 
     return res.status(200).json(materias)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({ error: 'No se pudieron obtener las materias' })
   }
 }
@@ -26,7 +26,7 @@ const getMateriaById = async (req, res) => {
 
     return res.status(200).json(materia)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({ error: 'No se pudo obtener la materia' })
   }
 }

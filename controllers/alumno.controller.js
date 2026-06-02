@@ -7,7 +7,7 @@ const getAlumnoAll = async (req, res) => {
 
     return res.status(200).json(alumnos)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res
       .status(500)
       .json({ error: 'No se puedieron obtener los datos de los alumnos' })
@@ -33,7 +33,7 @@ const getAlumnoById = async (req, res) => {
 
     return res.status(200).json(legajoId)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).JSON({
       error: 'No se pudo obtener el datalle del alumno con legajo n° {legajo}'
     })
@@ -69,10 +69,9 @@ const createAlumno = async (req, res) => {
       isActive
     })
     await fs.writeFile('./data/alumnos.json', JSON.stringify(alumnos))
-    console.log(`Alumno creado - legajo: ${legajo}`)
     return res.status(201).json({ msg: 'Alumno creado' })
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).JSON({
       error: 'No se pudo crear el alumno'
     })
@@ -86,7 +85,7 @@ const deleteAlumno = async (req, res) => {
     }
     const data = await fs.readFile('./data/alumnos.json', 'utf8')
     const alumnos = JSON.parse(data)
-    const alumnoToDelete = alumnos.find((a) => a.legajo === Number(legajo))
+    const alumnoToDelete = alumnos.find((a) => a.legajo == Number(legajo))
 
     if (!alumnoToDelete) {
       return res.status(400).json({ msg: `El legajo ${legajo} no existe` })
@@ -97,12 +96,11 @@ const deleteAlumno = async (req, res) => {
       JSON.stringify(updatedAlumnos, null, 2)
     )
 
-    console.log(`Alumno eliminado - legajo: ${legajo}`)
     return res
       .status(200)
       .json({ msg: 'Alumno eliminado', alumno: alumnoToDelete })
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({
       error: 'No se pudo eliminar el alumno'
     })
@@ -136,12 +134,11 @@ const updateAlumno = async (req, res) => {
       JSON.stringify(updatedAlumnos, null, 2)
     )
 
-    console.log(`Alumno actualizado - legajo: ${legajo}`)
     return res
       .status(200)
       .json({ msg: 'Alumno actualizado', alumno: alumnoToUpdate })
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({
       error: 'No se pudo actualizar el alumno'
     })

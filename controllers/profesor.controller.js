@@ -7,7 +7,7 @@ const getProfesorAll = async (req, res) => {
 
     return res.status(200).json(profesores)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({ error: 'No se pudieron obtener los profesores' })
   }
 }
@@ -26,7 +26,7 @@ const getProfesorById = async (req, res) => {
 
     return res.status(200).json(profesor)
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return res.status(500).json({ error: 'No se pudo obtener el profesor' })
   }
 }
