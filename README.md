@@ -28,7 +28,7 @@ API REST desarrollada con Node.js y Express que permite gestionar alumnos, mater
 
 ## Metodología de trabajo con Git y GitHub
 
-Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el formato `alumno_nombre`, realizó sus cambios y abrió un Pull Request hacia `main`. Cada alumno tiene mínimo un commit en su rama.
+Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el formato `alumno_nombre` o `feature/nombre`, realizó sus cambios y abrió un Pull Request hacia `dev`. Cada alumno tiene mínimo un commit en su rama.
 
 ---
 
@@ -37,11 +37,11 @@ Se trabajó con ramas por alumno. Cada integrante creó su propia rama con el fo
 | Integrante               | Archivos                                                                                                                                                                  |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Joaquin Robles           | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
-| Luca Aversano            | `index.html`, `main.js`                                                                                                                                                   |
-| Jano Rodriguez           | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
-| Dino Detzel              | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
-| Owen Braggi              | `alumno.model.ts`, `materia.controller.js`, `nota.controller.js`, `profesor.controller.js`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js` |
-| Garcia Amado Juan Manuel | `alumno.controller.js`,`alumno.model.ts`, `materia.routes.js`, `nota.routes.js`, `profesor.routes.js`, `core/server.js`                                                   |
+| Luca Aversano            | `index.html`, `script.js`                                                                                                                                                 |
+| Jano Rodriguez           | `base.css`, `components.css`, `forms.css`                                                                                                                                 |
+| Dino Detzel              | `README.md`, `components.css`, `forms.css`, `index.html`, `script.js`                                                                                                     |
+| Owen Bamberger           | `README.md`, `tp3-postman-collection.json`                                                                                                                                |
+| Garcia Amado Juan Manuel | `package.json`, `package-lock.json`, `alumno.controller.js`, `server.js`, `alumnos.json`, `alumno.routes.js`, `tp3-postman-collection.json`                               |
 
 ---
 
@@ -165,12 +165,6 @@ Clase `AlumnoModel` que extiende `PersonaModel`. Define los atributos del alumno
   "nota": 9,
   "fecha": "03-04-24"
 }
-```
-
-### sys-profesores.json
-
-```json
-[]
 ```
 
 ---
